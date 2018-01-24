@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试版</title>
+    <link rel="stylesheet" href="./scss/index1.css">
+    <link rel="stylesheet" href="./scss/video.css">
+</head>
+
+<body>
+    <div id="main" class="main ">
+        <div class="imgs">
+            <img src="./image/love_01.png" alt="">
+        </div>
+
+        <section>
+            <div class="content">
+                <div class="bg">
+                    <div class="title">
+                        <span>
+                        陌生人来了怎么办
+                    </span>
+                        <img class='music' src="./image/radio_stop.png" alt="">
+                        <audio class="audio" src="" autoplay></audio>
+                    </div>
+                    <div class="chracter">
+                        <div class="txt">
+                            眼（又称眼睛，目）是一个可以感知光线的器官。最简单的眼睛结构可以探测周围环境的明暗，更复杂的眼睛结构可以提供视觉。 复眼通常在节肢动物（例如昆虫）中发现，通常有很多简单的小眼面组成，并产生一个影像（不是通常想象的多影像）。
+                            <!--在很多脊椎动物和一些软体动物中，眼睛通过把光投射到对光敏感的视网膜成像，在那里，光线被接受并转化成信号并通过视神经传递到脑部。通常眼睛是球状的，当中充满透明的凝胶状的物质，有一个聚焦用的晶状体，通常还有一个可以控制进入眼睛光线多少的虹膜。-->
+                            <!--眼（又称眼睛，目）是一个可以感知光线的器官。最简单的眼睛结构可以探测周围环境的明暗，更复杂的眼睛结构可以提供视觉。复眼通常在节肢动物（例如昆虫）中发现，通常有很多简单的小眼面组成，并产生一个影像（不是通常想象的多影像）。在很多脊椎动物和一些软体动物中，眼睛通过把光投射到对光敏感的视网膜成像，在那里，光线被接受并转化成信号并通过视神经传递到脑部。通常眼睛是球状的，当中充满透明的凝胶状的物质，有一个聚焦用的晶状体，通常还有一个可以控制进入眼睛光线多少的虹膜。-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="writing hidden">
+        <div class="gif">
+            <img src="./image/video_gua.png" alt="">
+        </div>
+        <div class="video1">
+            <video id="video my_video_1" src='' class="video-js vjs-default-skin" x5-video-player-type="h5" x5-video-player-fullscreen="true"
+                x-webkit-airplay="allow" playsinline webkit-playsinline controls autoplay preload="auto" data-setup='{}'>
+            </video>
+        </div>
+        <!--<video id="video my_video_1" src='./src/hospital.mp4' class="video-js vjs-default-skin" x5-video-player-type="h5" x5-video-player-fullscreen="true"
+            x-webkit-airplay="allow" playsinline webkit-playsinline autoplay preload="auto" data-setup='{}'>
+        </video>-->
+    </div>
+    <footer>
+        <div class="nav_bar">
+            <img class='img' src="./image/1.png" alt="">
+            <img class='img' src="./image/2.png" alt="">
+            <img class='img' src="./image/3.png" alt="">
+            <img class='img' src="./image/4.png" alt="">
+            <img class='img' src="./image/5.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 10 * (clientWidth / 320) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+</script>
+<!--<script src="./js/video.js"></script>-->
+<script src='./js/jquery-1.12.4.js'></script>
+<script src="./js/index.js"></script>

@@ -1,0 +1,126 @@
+@function p2r($size) {
+    // 这里的64是 设计稿 分为 10份
+    @return $size/10 * 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// 先显示的页面
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+html,
+body {
+    background-color: #dbfcb5;
+}
+
+#main {
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgs {
+    width: 100%;
+    height: 38vh;
+    background-color: hotpink;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+section {
+    width: 100%;
+    height: 62vh;
+    background-color: #b9ff8b;
+    position: relative;
+    .content {
+        box-sizing: border-box;
+        padding-top: 5%;
+        height: 52vh; // background: url("../image/pic_1.5b88057.png") no-repeat top center/100% 100% #DAFDB4;
+        .bg {
+            border: p2r(1.5) solid #1d7c1d;
+            border-radius: p2r(10);
+            height: 48vh;
+            width: 90%;
+            margin-left: 5%;
+            background-color: #fff;
+            .title {
+                margin-top: 5%;
+                width: 90%;
+                margin-left: 6%;
+                box-sizing: border-box;
+                span {
+                    color: hotpink;
+                    font-size: p2r(20);
+                }
+                img {
+                    float: right;
+                    width: p2r(30);
+                }
+            }
+            .chracter {
+                width: 90%;
+                margin-left: 6%;
+                margin-top: p2r(10);
+                height: 88%;
+                overflow: hidden;
+                .txt {
+                    width: 100%;
+                    height: 100%;
+                    font-size: p2r(15);
+                    line-height: p2r(25); // 这两个滚动条。但是在平板不能滚
+                    // overflow-x: hidden;
+                    // overflow-y: scroll;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-left: 10%;
+    position: absolute;
+    bottom: p2r(5);
+    img {
+        width: p2r(40);
+        margin-right: p2r(7);
+    }
+}
+
+.writing {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 40%;
+    background: url('../image/video_page_bg.png') no-repeat center / 100% 100%;
+    .gif {
+        position: absolute;
+        top: p2r(97);
+        left: p2r(140);
+        z-index: 99999999;
+        img {
+            width: p2r(40);
+        }
+    }
+    .video1{
+        margin-left: 3%;
+        padding-top: 8vh;
+        width: 94%;
+        background-color: black;
+        // height: 40vh;
+        padding-bottom: 8vh;
+        border-radius: p2r(20);
+    }
+}
+
+// .writing{
+// }
